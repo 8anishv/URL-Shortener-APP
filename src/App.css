@@ -1,0 +1,200 @@
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InputContainer h1{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.5rem;
+}
+
+.InputContainer h1 span{
+  color: var(--primary-color);
+}
+
+.InputContainer input{
+  width: 100%;
+  padding: 0.5rem 0.2rem 0.5rem 0;
+  text-indent: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /* background-color: aqua; */
+}
+
+.InputContainer div{
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.InputContainer input::placeholder{
+  font-size: 0.9rem;
+}
+
+.InputContainer button{
+  padding: 0 1rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #111;
+  border:none;
+
+}
+
+/*Result css*/
+
+.result{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.result p{
+  color: #111;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  margin-right: 1rem;
+}
+
+.result button{
+  color: #111;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.result button.Copied{
+  background: #fff;
+  color: var(--primary-color);
+
+}
+
+.final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*background animate css*/
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #5c288f;
+  overflow: hidden;
+  z-index: -1;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+  left: 60%;
+  width: 168px;
+  height: 168px;
+  bottom: -168px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  bottom: -180px;
+  animation-delay: 5s;
+}
+.background li:nth-child(2) {
+  left: 77%;
+  width: 130px;
+  height: 130px;
+  bottom: -130px;
+  animation-delay: 2s;
+}
+.background li:nth-child(3) {
+  left: 57%;
+  width: 159px;
+  height: 159px;
+  bottom: -159px;
+  animation-delay: 3s;
+}
+.background li:nth-child(4) {
+  left: 40%;
+  width: 190px;
+  height: 190px;
+  bottom: -190px;
+  animation-delay: 9s;
+}
+.background li:nth-child(5) {
+  left: 79%;
+  width: 195px;
+  height: 195px;
+  bottom: -195px;
+  animation-delay: 6s;
+}
+.background li:nth-child(6) {
+  left: 10%;
+  width: 115px;
+  height: 115px;
+  bottom: -115px;
+  animation-delay: 1s;
+}
+.background li:nth-child(7) {
+  left: 70%;
+  width: 184px;
+  height: 184px;
+  bottom: -184px;
+  animation-delay: 30s;
+}
+.background li:nth-child(8) {
+  left: 59%;
+  width: 112px;
+  height: 112px;
+  bottom: -112px;
+  animation-delay: 7s;
+}
+.background li:nth-child(9) {
+  left: 23%;
+  width: 102px;
+  height: 102px;
+  bottom: -102px;
+  animation-delay: 11s;
+}
